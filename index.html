@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <meta name="description" content="To Do List">
+  <meta name="keywords" content="HTML, CSS, JavaScript, To do list">
+  <meta name="author" content="Mateus Teixeira Herculano">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Abel&family=Rancho&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/3394bb9f55.js" crossorigin="anonymous"></script>
+
+  <script src="script.js" defer></script>
+  
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+  <body>
+    <header>
+      <h1>To Do List<span id="version">v1.0</span></h1>
+    </header>
+    <hr>
+    <main id="ToDoList">
+      <div id="addTask">
+        <input type="text" id="addInput" placeholder="Add a task..." />
+        <button id="addButton" onclick="addTask()">Add</button>
+
+      </div>
+      <div id="taskContainer">
+        <p><span id="count">0</span> task(s) to be done!</p>         
+      </div>
+    </main>    
+    <footer>
+      <a href="https://github.com/mateusth" target="_blank" title="Github"><code>Mateus T. Herculano</code>
+        <i class="fab fa-github"></i></a>
+    </footer>
+  </body>
+</html>
